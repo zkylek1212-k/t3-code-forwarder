@@ -1,0 +1,10 @@
+{
+  "listenIp": "192.168.1.100",
+  "listenPort": 3780,
+  "targetHost": "127.0.0.1",
+  "targetPort": 3773,
+  "autoTargetPort": true,
+  "allow": [
+    "192.168.1.50"
+  ]
+}

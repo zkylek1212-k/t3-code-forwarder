@@ -1,0 +1,27 @@
+{
+  "name": "t3-code-forwarder",
+  "version": "1.0.0",
+  "description": "Lightweight zero-dependency TCP forwarder to expose T3 Code Desktop on a specific private/VPN IP instead of 0.0.0.0.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "t3-forward": "./src/cli.mjs"
+  },
+  "scripts": {
+    "start": "node ./src/cli.mjs",
+    "pair": "node ./src/pair.mjs",
+    "test": "node --test ./test/*.test.mjs"
+  },
+  "keywords": [
+    "t3code",
+    "forwarder",
+    "proxy",
+    "lan",
+    "vpn",
+    "tailscale",
+    "meshnet"
+  ]
+}
