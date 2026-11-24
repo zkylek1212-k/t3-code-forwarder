@@ -76,7 +76,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       const rewritten = rewritePairingText(res.stdout, options.listenIp, options.listenPort);
       const urls = rewritten.match(/http:\/\/[^\s]+/g);
       if (urls?.length) {
-        console.log("\n--- Forwarded URL ---");
+        console.log("\n--- Forwarded URL (open this instead of scanning the 127.0.0.1 QR code above) ---");
         for (const u of new Set(urls)) console.log(u);
       }
     }
